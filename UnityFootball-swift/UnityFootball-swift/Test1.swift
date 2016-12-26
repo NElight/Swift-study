@@ -31,6 +31,26 @@ class Test1: NSObject {
         
         print(http200Status.statusCode)
         
+        var serverResponseCode:Int?
+        
+        var a1:Int?;
+        var a2:Int?;
+        
+        if let a11 = a1, let a22 = a2, a11 > a22 {
+            print(a1 ?? 1, a2 ?? 2);
+        }
+        
+        var a3 :Int!;
+        print(a3);
+        
+        let a4 = a1 ?? 3;
+        
+        
+        var emptyString = String()
+        if emptyString.isEmpty {
+            emptyString = ""
+        }
+        
     }
     
 
